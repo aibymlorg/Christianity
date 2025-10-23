@@ -1,0 +1,14 @@
+{
+  "name": "christian-platform",
+  "version": "1.0.0",
+  "description": "Christian Community Platform",
+  "private": true,
+  "scripts": {
+    "install:all": "cd main-platform && npm install && cd ../backend-api && npm install",
+    "dev": "./scripts/start-all.sh",
+    "dev:main": "cd main-platform && npm run dev",
+    "dev:backend": "cd backend-api && npm run dev",
+    "build": "cd backend-api && npm run build && cd ../main-platform && npm run build",
+    "modules:install": "./scripts/install-modules.sh"
+  }
+}
